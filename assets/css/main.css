@@ -2923,7 +2923,6 @@ button:disabled,
 @media screen and (max-width: 480px) {
 
 	/* Basic */
-
 	html, body {
 		min-width: 320px;
 	}
@@ -3034,6 +3033,17 @@ button:disabled,
 	z-index: 2;
 }
 
+@media screen and (max-width: 480px) {
+	.top-img {
+		display: none;
+	}
+
+	#header header h1 {
+		font-size: 1.5em;
+	}
+
+}
+
 .video {
 	position: fixed;
 	top: 50%; left: 50%;
@@ -3048,4 +3058,18 @@ button:disabled,
 
 #typeform-full {
 	min-height: 40em;
+}
+
+.google-maps {
+	position: relative;
+	padding-bottom: 75%;
+	height: 0;
+	overflow: hidden;
+}
+.google-maps iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
 }
